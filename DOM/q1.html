@@ -12,9 +12,15 @@
 
     <script>
         // On Clicking the button Append Hello to the page
-        let btn = document.querySelector('button');
+        let btn = document.querySelector('button'); // this method used to identify and select the element.
+
         btn.addEventListener('click', function(){
-           console.log("clicked");
+          // console.log("clicked");
+        let divElm = document.createElement('div'); // createElement lets you create new element in the dom
+        
+        let bodyElm = document.querySelector('body');
+        bodyElm.appendChild(divElm); // this method allows you to add new children inside your selected element.
+        divElm.innerText = 'Hello' // innerText is a property by which you can access and add or remove text inside an element.
          
 
     })
