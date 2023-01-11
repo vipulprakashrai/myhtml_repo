@@ -1,6 +1,7 @@
 // Callback function--> A function that can be passed to another function as an argument so that it
 // can be called later is known as a callback function.
 
+// Normal function callig
  function printFirstName(firstName){
     console.log(firstName);
  }
