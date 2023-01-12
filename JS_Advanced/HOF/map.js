@@ -55,3 +55,4 @@ let convertedTransaction = transaction.map(function(item){
     return item/InrtoUsd;
 })
 console.log(convertedTransaction);
+
