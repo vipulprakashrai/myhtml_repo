@@ -56,6 +56,13 @@ let arr = [
  })
  console.log(female);
 
+/////
+ const randomNumbers = [4, 11, 42, 14, 39];
+const filteredArray = randomNumbers.filter(function(n) {  
+  return n > 5;
+});
+console.log(filteredArray);
+
   
 
 
