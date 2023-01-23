@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    padding: 0px;
+    background-color: grey;
+    display: flex;
+}
+
+
+.color{
+    margin: 10px;
+    padding: 20px;
+    background-color: #595959;
+    width: 18rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+        
+}
+
+.color>div{
+    width: 3rem;
+    height: 300%;
+    display: flex;
+    
+   
+}
+
+.box1{
+   background-color: lightpink;
+}
+
+.box2{
+    background-color: lightgreen;
+}
+
+.box3{
+    background-color: lightblue;
+}
+
+.box4{
+    background-color: black;
+}
+
+.action-cont{
+    margin: 10px;
+    padding: 10px;
+    background-color: #595959;
+    color: white;
+    width: 5rem;
+    font-size: 1.5em;
+    display: flex;
+    justify-content:space-between; 
+}
+
+.main-cont{
+    margin:50px;
+    padding: 10px;
+    background-color: lightslategrey;
+    width: 50%;
+    height: 25rem ;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.main-cont>div{
+    margin: 0px;
+    padding: 0px;
+}
+
+.color-cont{
+    
+    background-color: #595959;
+    width: 10rem;
+    height: 24rem;
+    display: block;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.b1{
+    background-color: lightpink;
+}
+
+.b2{
+    background-color: lightgreen;
+}
+
+.b3{
+    background-color: lightblue;
+}
+
+.b4{
+    background-color: black;
+}
+
