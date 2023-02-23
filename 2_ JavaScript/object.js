@@ -3,10 +3,15 @@
 let person = {
     name : 'peter',
     age : 20,
-    gender : 'male'
-} // declaration
+    gender : 'male',
+    "college name" :    "MIT",
+}; // declaration
 
 console.log(person);
+// acessing property from object->
+ console.log(person.gender);
+ console.log(person["college name"]); // square bracket notation
+//  console.log(person.college name);  // syntax error
 
 let captainAmerica = {
     name : 'Steve Rogers',
@@ -21,7 +26,9 @@ let captainAmerica = {
         }
     },
     isAvenger : 'true',
-}
+    
+};
+
 
 // Acessing the properties of an object-
 
@@ -32,3 +39,8 @@ console.log(nameOfCaptain);
 
 let captainAmericaCity = captainAmerica.address.city.cityName
 console.log(captainAmericaCity);
+
+// Square bracket Notation
+
+var ageOfCaptain = captainAmerica["age"]
+console.log(ageOfCaptain);
