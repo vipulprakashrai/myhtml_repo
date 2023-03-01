@@ -7,7 +7,7 @@ body{
     padding: 0px;
 }
 
-.container{
+.toolbox-cont{
     padding: 0px;
     background-color: grey;
     display: flex;
@@ -70,7 +70,7 @@ body{
     left: 20vw;
 }
 
-.text-cont{
+.textarea-cont{
     width: 75%;
     height: 100%;
     background-color: #dfe4ea;
@@ -97,5 +97,39 @@ body{
     height: 3rem;
 }
 
+.ticket-cont{
+    height: 12rem;
+    width: 15rem;
+    background-color: #f1f2f6;
+}
 
+.ticket-color{
+    height: 1rem;
+   
+}
+
+.ticket-id{
+    height: 2rem;
+    background-color: red;
+}
+
+.task-area{
+    height: calc( 100% - 1rem - 2rem );
+    font-size: 1.5rem;
+}
+
+.ticket-lock{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -18px;
+    margin-right: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
