@@ -145,7 +145,7 @@ removeBtn.addEventListener("click", () => {
 
 });
 
-
+// remove btn functionality
 function handleRemoval(ticketCont,id){
     ticketCont.addEventListener("click", function () {
       if (!isRemoveBtnActive) return;
