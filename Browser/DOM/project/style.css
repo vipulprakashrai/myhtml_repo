@@ -133,3 +133,7 @@ body{
     flex-wrap: wrap;
 }
 
+.active{
+    border: 5px solid red;
+}
+
