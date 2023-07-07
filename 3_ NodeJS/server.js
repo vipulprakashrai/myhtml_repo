@@ -7,12 +7,37 @@ const server = http.createServer((req, res) => {
         //  res.setHeader("content-type", "text/plain");
         res.setHeader("content-type", "text/html");
 
+        let path = './view/';
+        switch(req.url){
+          case '/':
+            path += 'index.html';
+            res.statusCode = 200;
+            break;
+          case '/about':
+            path += 'about.html';
+            res.statusCode = 200;
+            break;
+          default:
+            path += '404.html';
+            res.statusCode = 400;
+            break;    
+        }
+
         // res.write("<head><link rel='stylesheet' href='#'></head>")
         //  res.write("<h1>hello there</h1>");
         //  res.write("<h2>hello there</h2>");
         //  res.end();
 
-    fs.readFile('./view/index.html')
+    fs.readFile(path, (err, data) => {
+              if(err){
+                console.log(err);
+                res.end();
+              }
+              else{
+                res.write(data);
+                res.end();
+              }
+    })
 
 });
 server.listen(3000, "localhost", () => {
