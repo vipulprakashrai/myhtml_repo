@@ -15,7 +15,7 @@ app.get('/', (req, res)=> {
         {title: 'shashi goes to trip', snippet: 'Lorem ipsum dolor sit, amet consectetur'},
         {title: 'yashita sleeps a lot', snippet: 'Lorem ipsum dolor sit, amet consectetur'}
     ];
-   res.render("index", {title: "Home", blogs: "blogs"});
+   res.render("index", {title: "Home", blogs});
 });
 
 app.get('/about', (req, res)=> {
